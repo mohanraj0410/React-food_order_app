@@ -2,7 +2,7 @@ import { Header } from "./components/header.jsx";
 import { Body } from "./components/body.jsx";
 import { Footer } from "../src/components/footer.jsx";
 import ReactDOM from "react-dom/client";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createHashRouter } from "react-router-dom";
 // import { About } from "./components/about.jsx";
 // import { Contact } from "./components/contact.jsx";
 import { Error } from "./components/error.jsx";
@@ -28,17 +28,17 @@ let Index = () => {
         </div>
     )
 }
-let router = createBrowserRouter([
+let router = createHashRouter([
     {
-        path: "",
+        path: "/",
         element: <Index />,
         children: [
             {
-                path: "",
+                path: "/",
                 element: <Body />
             },
             {
-                path: "/about",
+                path: "/",
                 element: <Suspense fallback={<div>loading...</div>}><About /></Suspense>
                 // element:<About/>
             },
