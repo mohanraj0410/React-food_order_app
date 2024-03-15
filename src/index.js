@@ -38,7 +38,7 @@ let router = createHashRouter([
                 element: <Body />
             },
             {
-                path: "/",
+                path: "/about",
                 element: <Suspense fallback={<div>loading...</div>}><About /></Suspense>
                 // element:<About/>
             },
