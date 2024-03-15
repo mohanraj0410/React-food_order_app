@@ -55,8 +55,7 @@ let router = createBrowserRouter([
                 path: "/restaurants/:resId",
                 element: <RestaurantsMenu />
             }
-        ],
-        errorElement: <Error />
+        ]
     },
 
 ])
