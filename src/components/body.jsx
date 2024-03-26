@@ -20,7 +20,7 @@ export let Body = () => {
         )
             .then(
                 (x) => {
-                    console.log(x)
+                    // console.log(x)
                     setResInfo(x.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
                     setSearchList(x.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
                 }
@@ -70,7 +70,7 @@ export let Body = () => {
             <div className="card">
                 {
                     searchList.map((x) => {
-                        console.log(x)
+                        // console.log(x)
                         return (
                             <Link to={"/restaurants/" + x.info.id}>
                                 {

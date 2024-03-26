@@ -24,7 +24,7 @@ export const RestaurantsMenu = () => {
                 (x) => {
                     console.log(x)
                     setResMenu(x.data.cards)
-                    setMenuItems(x.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards)
+                    setMenuItems(x.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards)
                 }
             )
     }
@@ -38,7 +38,7 @@ export const RestaurantsMenu = () => {
         (x) => x.card.card.itemCards != undefined
     )
 
-    let { name, cuisines, areaName, feeDetails, avgRatingString, totalRatingsString, sla, costForTwoMessage } = resMenu[0].card.card.info;
+    let { name, cuisines, areaName, feeDetails, avgRatingString, totalRatingsString, sla, costForTwoMessage } = resMenu[2].card.card.info;
     return (
         <div className='container-resMenu'>
             <div className='container-mainresMenu'>

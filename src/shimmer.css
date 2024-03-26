@@ -23,7 +23,7 @@
     background-color: rgba(128, 128, 128, 0.24);
 }
 .shimmer-heading{
-    margin: 20px 20px 0px 20px ;
+    margin: 20px 20px 0px 120px ;
     height: 32px;
     width: 430px;
     border-radius: 5px;
@@ -32,6 +32,7 @@
 .shimmer-card{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
