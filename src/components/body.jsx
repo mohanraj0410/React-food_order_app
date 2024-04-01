@@ -25,6 +25,11 @@ export let Body = () => {
                     setSearchList(x.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
                 }
             )
+            .catch(error => {
+                // console.error(error);
+                alert("Notes : using a CORS extension to access data from the Swiggy API in your application during development.");
+              })
+            
     }
     if (resInfo.length == 0) {
         return (<Shimmer />)
