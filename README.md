@@ -2,6 +2,8 @@ Yummy is a modern web-based food ordering application built using React.js, Reac
 The application utilizes the Swiggy API to fetch restaurant data, menu items, and user reviews. 
 It offers features such as top rating, searching by name, adding items to cart, and accordion navigation for improved user experience.
 
+Notes:using a CORS extension to access data from the Swiggy API in your application during development.
+
 Key Features:
 
 Restaurant Listings: Fetch restaurant listings from the Swiggy API and display them in a visually appealing manner. Utilize useState and useEffect hooks to manage restaurant data state and fetch data asynchronously.
