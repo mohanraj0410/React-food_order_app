@@ -3,7 +3,7 @@ import noimage from "../img/notavailable.jpg"
 import { useDispatch } from 'react-redux';
 import { addItem } from '../utils/cartSlice';
 
-let cardImage = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_588,h_320,c_fill/";
+let cardImage = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_588,h_320/";
 
 const RestaurantsMenuItemsList = (props) => {
     console.log(props);
